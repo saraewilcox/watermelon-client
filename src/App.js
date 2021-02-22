@@ -36,6 +36,8 @@ class App extends React.Component {
   }
 
   render() {
+    const playListApi = process.env.REACT_APP_PARTYPLAYLIST_API;
+    console.log("playListApi>>>", playListApi);
     return (
       <div className="App">
         <Switch>
@@ -62,7 +64,7 @@ class App extends React.Component {
           <Route
             path="/login-spotify"
             render={() => {
-              window.location.href = `${process.env.REACT_APP_PARTYPLAYLIST_API}/api/auth/spotify`;
+              window.location.href = `${playListApi}/api/auth/spotify`;
             }}
           />
         </Switch>

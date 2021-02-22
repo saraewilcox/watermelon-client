@@ -9,6 +9,7 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.1",
     "axios": "^0.21.1",
+    "express": "^4.17.1",
     "react": "^17.0.1",
     "react-audio-player": "^0.14.0",
     "react-confetti": "^6.0.0",
@@ -20,8 +21,9 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "node server.js",
+    "start-dev": "react-scripts start",
+    "heroku-postbuild": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
