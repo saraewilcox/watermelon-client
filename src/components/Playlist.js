@@ -27,15 +27,15 @@ class Playlist extends React.Component {
   }
 
   render() {
-    const ConfettiWidth=1400
-    const ConfettiHeight=750
+    const ConfettiWidth=1250
+    const ConfettiHeight=650
 
     const size = {
       width: "75%",
       height: 350,
     };
-    const view = 'list'; // or 'coverart'
-    const theme = 'white'; // or 'white'
+    const view = 'list'; 
+    const theme = 'white'; 
     let renderContainer = false
     if(this.state.render) {
       renderContainer =
@@ -43,7 +43,7 @@ class Playlist extends React.Component {
         <div>
           <Navbar />
         </div>
-        <h2>Here's the Playlist</h2>
+        <h2 className="primary-subtitle">Here's the Playlist</h2>
         <div>
             <SpotifyPlayer
               uri={this.state.playlist}

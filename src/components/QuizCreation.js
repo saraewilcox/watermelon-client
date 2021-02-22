@@ -72,7 +72,7 @@ class QuizCreation extends React.Component {
       renderContainer = 
       <div className="quizCreation">
       <Navbar />
-      <h1 className="primary-title">Create your quiz! Use the ideas below or<br/> come up with your own questions</h1>
+      <h1 className="primary-title">Create your game! Use the ideas below or<br/> come up with your own questions</h1>
       <form onSubmit={this.handleFormSubmit}>
         <div className="title-description-section">
           <div className="question">

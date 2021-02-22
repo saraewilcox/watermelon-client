@@ -22,7 +22,7 @@ class QuizCode extends React.Component {
           <Navbar />
         </div>
         <div className="quizcode-title">
-          <h1 className="primary-title">Here's your quiz code!</h1>
+          <h1 className="primary-title">Here's your game code!</h1>
           <h2 className="primary-subtitle">Share it with your friends</h2>
         </div>
         <div className="quizcode-wrapper">
