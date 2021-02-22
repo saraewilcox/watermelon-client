@@ -17,7 +17,7 @@ class LobbyGame extends React.Component {
         const game = response.data[0];
         this.setState({
           users: game.users,
-        });
+        }, () => console.log("users>>>", this.state.users));
       });
     }, 2000);
   }
