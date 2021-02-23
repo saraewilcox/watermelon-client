@@ -26,7 +26,6 @@ class App extends React.Component {
       const authService = new AuthService();
       authService.loggedin().then((response) => {
         if (response.data._id) {
-          console.log("response>>>", response)
           this.setCurrentUser(response.data);
           console.log('this should contain loggedInUser:', response.data)
           localStorage.setItem('loggedInUser', response.data.displayName);
@@ -39,7 +38,7 @@ class App extends React.Component {
 
   render() {
     const playListApi = process.env.REACT_APP_PARTYPLAYLIST_API;
-    console.log("playListApi>>>", playListApi);
+    console.log("playListApi update>>>", playListApi);
     return (
       <div className="App">
         <Switch>

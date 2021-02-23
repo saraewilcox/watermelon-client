@@ -37,6 +37,7 @@ class Playlist extends React.Component {
     const view = 'list'; 
     const theme = 'white'; 
     let renderContainer = false
+const {playlist} = this.state;
     if(this.state.render) {
       renderContainer =
       <div className="quizcode-wrapper">
@@ -44,9 +45,10 @@ class Playlist extends React.Component {
           <Navbar />
         </div>
         <h2 className="primary-subtitle">Here's the Playlist</h2>
-        <div>
+        {playlist !== null && (
+          <div>
             <SpotifyPlayer
-              uri={this.state.playlist}
+              uri={playlist}
               size={size}
               view={view}
               theme={theme}
@@ -56,6 +58,7 @@ class Playlist extends React.Component {
               height={ConfettiHeight}
             />
         </div>
+        )}
       </div>    
     }
   return renderContainer
