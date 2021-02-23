@@ -27,6 +27,7 @@ class App extends React.Component {
       authService.loggedin().then((response) => {
         if (response.data._id) {
           this.setCurrentUser(response.data);
+          console.log('this should contain loggedInUser:', response.data)
           localStorage.setItem('loggedInUser', response.data.displayName);
         } else {
           localStorage.removeItem('loggedInUser');
