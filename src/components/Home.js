@@ -45,7 +45,7 @@ class Home extends React.Component {
         >
         </video>
         <div className="home-form-wrapper">
-          <h1 className="primary-home-title">Join a Game</h1>
+          <h1 className="primary-home-title-join">Join a Game</h1>
           <form className="form-home" onSubmit={this.handleFormSubmit}>
             <div className="form-field">
               <label id="label"></label>
@@ -78,16 +78,26 @@ class Home extends React.Component {
               <button className="treat-button-home">Join!</button>
             </div>
           </form>
-          <br />
-          <br />
-          <center className="p-home">
-            Be a host and create a game! Log in{' '}
-            <a href="/login-spotify" id="host">
+        </div>
+        <div className="p-home">
+        <h1 className="primary-home-title-create">Create a Game</h1>
+          <div className="p-home-text"> Be a host and create a game! 
+          <div className="p-home-text">Log in using your Spotify account </div>
+            {/* <a href="/login-spotify" id="host">
               here
-            </a>
-          </center>
+            </a> */}
+            <div className="form-field">
+            <button className="treat-button-home"
+            onClick={(e) => {
+            e.preventDefault();
+            window.location.href="/login-spotify";
+            }}
+            > Create!</button>
+            </div>
+          </div>
         </div>
       </div>
+
     );
   }
 }
