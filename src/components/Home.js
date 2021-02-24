@@ -75,7 +75,7 @@ class Home extends React.Component {
             </div>
             <br />
             <div className="form-field">
-              <button className="treat-button-home">Join!</button>
+              <button className="treat-button-home-create">Join!</button>
             </div>
           </form>
         </div>
@@ -87,7 +87,7 @@ class Home extends React.Component {
               here
             </a> */}
             <div className="form-field">
-            <button className="treat-button-home"
+            <button className="treat-button-home-create"
             onClick={(e) => {
             e.preventDefault();
             window.location.href="/login-spotify";

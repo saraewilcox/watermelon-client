@@ -30,7 +30,7 @@ class LobbyGame extends React.Component {
 
   render() {
     return this.state.users ? (
-      <div className="lobby-game-wrapper">
+      <div className="lobby-wrapper">
         <div>
           <Navbar />
         </div>
