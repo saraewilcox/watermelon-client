@@ -79,6 +79,7 @@ class Home extends React.Component {
             </div>
           </form>
         </div>
+        <div className="divider"></div>
         <div className="p-home">
         <h1 className="primary-home-title-create">Create a Game</h1>
           <div className="p-home-text"> Be a host and create a game! 
