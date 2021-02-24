@@ -96,6 +96,7 @@ class QuizCreation extends React.Component {
             <div className="inputQuestion">
               <input
                 className="primary-input"
+                style={{width:"350px"}}
                 type="textarea"
                 name="description"
                 onChange={this.handleChangeTitleDescription}
@@ -112,7 +113,7 @@ class QuizCreation extends React.Component {
             <div className="inputQuestion">
               <input
                 className="primary-input"
-                style={{width:"280px"}}
+                style={{width:"350px"}}
                 type="text"
                 name="question1"
                 onChange={this.handleChange}
@@ -128,7 +129,7 @@ class QuizCreation extends React.Component {
             <div className="inputQuestion">
               <input
                 className="primary-input"
-                style={{width:"360px"}}
+                style={{width:"350px"}}
                 type="text"
                 name="question2"
                 onChange={this.handleChange}
@@ -144,7 +145,7 @@ class QuizCreation extends React.Component {
             <div className="inputQuestion">
               <input
                 className="primary-input"
-                style={{width:"330px"}}
+                style={{width:"350px"}}
                 type="text"
                 name="question3"
                 onChange={this.handleChange}
@@ -162,7 +163,7 @@ class QuizCreation extends React.Component {
           <div className="inputQuestion">
             <input
               className="primary-input"
-              style={{width:"330px"}}
+              style={{width:"350px"}}
               type="text"
               name="question4"
               onChange={this.handleChange}
@@ -178,7 +179,7 @@ class QuizCreation extends React.Component {
           <div className="inputQuestion">
             <input
               className="primary-input"
-              style={{width:"300px"}}
+              style={{width:"350px"}}
               type="text"
               name="question5"
               onChange={this.handleChange}
