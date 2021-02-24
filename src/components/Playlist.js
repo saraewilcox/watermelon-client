@@ -32,7 +32,7 @@ class Playlist extends React.Component {
 
     const size = {
       width: "75%",
-      height: 350,
+      height: 500,
     };
     const view = 'list'; 
     const theme = 'white'; 
