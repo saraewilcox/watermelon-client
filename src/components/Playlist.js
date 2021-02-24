@@ -4,6 +4,7 @@ import SpotifyPlayer from 'react-spotify-player';
 import {withRouter} from 'react-router-dom';
 import Navbar from './Navbar/Navbar';
 import Confetti from 'react-confetti';
+import Footer from './Footer/Footer';
 
 class Playlist extends React.Component {
   state = {
@@ -59,6 +60,9 @@ const {playlist} = this.state;
             />
         </div>
         )}
+        <div>
+          <Footer />
+        </div>
       </div>    
     }
   return renderContainer

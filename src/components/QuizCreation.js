@@ -2,6 +2,7 @@ import React from 'react';
 import Quiz from '../utils/api';
 import { withRouter } from 'react-router-dom';
 import Navbar from './Navbar/Navbar';
+import Footer from './Footer/Footer';
 
 class QuizCreation extends React.Component {
   state = {
@@ -194,6 +195,9 @@ class QuizCreation extends React.Component {
         <button className="treat-button-home">Submit!</button>
         </div>
       </form>
+      <div>
+          <Footer />
+        </div>
     </div>
     }
     return renderContainer

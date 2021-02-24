@@ -2,6 +2,7 @@ import React from 'react';
 import Quiz from '../utils/api';
 import { withRouter } from 'react-router-dom';
 import video from '../video/movie/watermelon-short-vid.mp4';
+import Footer from './Footer/Footer';
 
 class Home extends React.Component {
   state = {
@@ -96,6 +97,9 @@ class Home extends React.Component {
             > Create!</button>
             </div>
           </div>
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
 

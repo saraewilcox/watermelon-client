@@ -3,6 +3,7 @@ import Quiz from '../utils/api.js';
 //import SearchBar from './SearchBar';
 import { withRouter } from 'react-router-dom';
 import Navbar from './Navbar/Navbar';
+import Footer from './Footer/Footer';
 //import Spotify from './Spotify'
 
 class Game extends React.Component {
@@ -89,6 +90,9 @@ class Game extends React.Component {
             </div>
             <button className="treat-button-quizcode">Submit</button>
           </form>
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
     );

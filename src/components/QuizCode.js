@@ -3,6 +3,7 @@ import React from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { withRouter } from 'react-router-dom';
 import Navbar from './Navbar/Navbar';
+import Footer from './Footer/Footer';
 
 class QuizCode extends React.Component {
   state = {
@@ -58,6 +59,9 @@ class QuizCode extends React.Component {
               Join Lobby
             </button>
           </div>
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
     );

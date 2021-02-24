@@ -2,6 +2,7 @@ import React from 'react';
 import Quiz from '../utils/api';
 import Navbar from './Navbar/Navbar';
 import '../App.css';
+import Footer from './Footer/Footer';
 
 class LobbyGame extends React.Component {
   state = {
@@ -56,6 +57,9 @@ class LobbyGame extends React.Component {
               </button>
             </div>
           </div>
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
     ) : (
