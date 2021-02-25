@@ -46,7 +46,28 @@ class Home extends React.Component {
         >
         </video>
         <div className="home-form-wrapper">
-          <h1 className="primary-home-title-join">Join a Game</h1>
+        <h1 className="primary-home-title-create">Create a Game</h1>
+          <div className="p-home-text"> Log in using your Spotify account.
+          <br/>Write a kahoot-style quiz game.
+          <br/>Invite your friends.
+          <br/>Their answers will create a playlist.
+          <div> <br/> </div>
+            {/* <a href="/login-spotify" id="host">
+              here
+            </a> */}
+            <div className="form-field">
+            <button className="treat-button-home-create"
+            onClick={(e) => {
+            e.preventDefault();
+            window.location.href="/login-spotify";
+            }}
+            > Create!</button>
+            </div>
+          </div>
+        </div>
+        <div className="divider"></div>
+        <div className="p-home">
+        <h1 className="primary-home-title-join">Join a Game</h1><h3 style={{color: 'white'}}>Receive an invite from a friend? </h3>
           <form className="form-home" onSubmit={this.handleFormSubmit}>
             <div className="form-field">
               <label id="label"></label>
@@ -79,24 +100,7 @@ class Home extends React.Component {
               <button className="treat-button-home-create">Join!</button>
             </div>
           </form>
-        </div>
-        <div className="divider"></div>
-        <div className="p-home">
-        <h1 className="primary-home-title-create">Create a Game</h1>
-          <div className="p-home-text"> Be a host and create a game! 
-          <div className="p-home-text">Log in using your Spotify account </div>
-            {/* <a href="/login-spotify" id="host">
-              here
-            </a> */}
-            <div className="form-field">
-            <button className="treat-button-home-create"
-            onClick={(e) => {
-            e.preventDefault();
-            window.location.href="/login-spotify";
-            }}
-            > Create!</button>
-            </div>
-          </div>
+
         </div>
         <div>
           <Footer />

@@ -82,11 +82,12 @@ class QuizCreation extends React.Component {
             <div className="inputQuestion">
               <input
                 className="primary-input"
+                style={{width:"350px"}}
                 type="text"
                 name="title"
                 onChange={this.handleChangeTitleDescription}
                 value={this.state.title}
-                placeholder="Playlist Title"
+                placeholder="PLAYLIST TITLE"
                 required
               />
             </div>
@@ -102,7 +103,7 @@ class QuizCreation extends React.Component {
                 name="description"
                 onChange={this.handleChangeTitleDescription}
                 value={this.state.description}
-                placeholder="Describe your playlist "
+                placeholder="DESCRIBE YOUR PLAYLIST"
               />
             </div>
           </div>
