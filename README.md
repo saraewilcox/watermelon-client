@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+watermelon is a free app blending kahoot and Spotify. Write 5 questions about songs (examples: What is the best 80's rock song? The best Beyonce jam? The song that reminds you of high school?) and invite your friends to answer. Their responses are made into a Spotify playlist.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://watermelon-jams-ts7rp.ondigitalocean.app/
 
-## Available Scripts
+####For the cloners out there
 
-In the project directory, you can run:
+Directions for those that are cloning this project to run on their local machine. First, clone this frontend and the backend as well, https://github.com/saraewilcox/watermelon-server
 
-### `npm start`
+#####Requirements
+-Spotify developer credentials (ID and SECRET)
+-A functional MongoDB instance and connection parameters (Example: mongodb://user:pass@server:port)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+For the Spotify developer credentials make a Spotify Developer Account and create a project.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#####Make a watermelon-server environment file
+Obtain the CLIENT_ID and CLIENT_SECRET provided by the Spotify project and create a .env.local file in the watermelon-server global directory with the following:
 
-### `npm test`
+PORT=5000
+ENV=development
+CLIENT_HOSTNAME=http://localhost:3000
+SPOTIFY_CLIENT_ID=your client id
+SPOTIFY_CLIENT_SECRET=your secret id
+MONGODB_URI=your mondo.db
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#####Then make a watermelon-client environment file:
+REACT_APP_PARTYPLAYLIST_API=http://localhost:5000
 
-### `npm run build`
+#####Install and run
+Install the required packages on both client and server:
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run the development server:
+npm run dev-windows
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Run the development client:
+npm run start-dev
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Open http://localhost:3000 with your browser to see the result.
