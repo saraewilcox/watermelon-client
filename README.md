@@ -19,11 +19,17 @@ For the Spotify developer credentials make a Spotify Developer Account and creat
 Obtain the CLIENT_ID and CLIENT_SECRET provided by the Spotify project and create a .env.local file in the watermelon-server global directory with the following:
 
 PORT=5000
+
 ENV=development
+
 CLIENT_HOSTNAME=http://localhost:3000
+
 SPOTIFY_CLIENT_ID=your client id
+
 SPOTIFY_CLIENT_SECRET=your secret id
+
 MONGODB_URI=your mondo.db
+
 
 #####Then make a watermelon-client environment file:
 
