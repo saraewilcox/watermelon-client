@@ -9,10 +9,13 @@ https://watermelon-jams-ts7rp.ondigitalocean.app/
 Directions for those that are cloning this project to run on their local machine. First, clone this frontend and the backend as well, https://github.com/saraewilcox/watermelon-server
 
 #####Requirements
+
 -Spotify developer credentials (ID and SECRET)
+
 -A functional MongoDB instance and connection parameters (Example: mongodb://user:pass@server:port)
 
-For the Spotify developer credentials make a Spotify Developer Account and create a project.
+
+For the Spotify developer credentials you will need to make a Spotify Developer Account and create a project.
 
 #####Make a watermelon-server environment file
 
