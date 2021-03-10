@@ -2,7 +2,7 @@ watermelon is a free app blending kahoot and Spotify. Write 5 questions about so
 
 User authenticates using Spotify OAuth.
 
-https://watermelon-jams-ts7rp.ondigitalocean.app/
+Try it out here: https://watermelon-jams-ts7rp.ondigitalocean.app/
 
 ####For the cloners out there
 
