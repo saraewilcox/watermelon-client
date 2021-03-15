@@ -65,7 +65,7 @@ class Game extends React.Component {
       <div>
         <Navbar />
         <div className="lobby-game-wrapper">
-          <h1 className="primary-title">Enter your song responses<br/>Specify the artist if you know it</h1>
+          <h1 className="primary-title">Enter your song responses<br/>Specify the artist if you know it</h1><h3 style={{ color: 'white'}}>Example: Crazy, Patsy Cline or Crazy, Gnarls Barkley</h3>
           <form onSubmit={this.handleFormSubmit}>
             <div className="gameQuestions">
             {/* <SearchBar onSearch = {this.search} /> */}

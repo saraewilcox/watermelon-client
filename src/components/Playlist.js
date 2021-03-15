@@ -33,7 +33,7 @@ class Playlist extends React.Component {
 
     const size = {
       width: "75%",
-      height: 500,
+      height: 400,
     };
     const view = 'list'; 
     const theme = 'white'; 
@@ -57,6 +57,8 @@ const {playlist} = this.state;
             <Confetti
               width={ConfettiWidth}
               height={ConfettiHeight}
+              numberOfPieces={500}
+              recycle={false}
             />
         </div>
         )}
