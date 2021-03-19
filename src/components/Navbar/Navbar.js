@@ -20,7 +20,7 @@ class Navbar extends Component {
     render () {
         return (
             <nav className="NavbarItems">
-                <h1 className="navbar-logo"> <a href={'/'} style={{textDecoration:"none", color:"white"}}>Watermelon</a> <i className="fab fa-spotify"></i></h1>
+                <h1 className="navbar-logo"> <a href={'/home'} style={{textDecoration:"none", color:"white"}}>Watermelon</a> <i className="fab fa-spotify"></i></h1>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                     

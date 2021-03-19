@@ -8,7 +8,7 @@ const Footer = (props) => {
             <div className="row">
             {/* column1 */}
                 <div className="col">
-                {/*Ironhack Final Project */ }Watermelon by Francisco Maraposo & Sara Wilcox
+                {/*Ironhack Final Project */ }
                 </div>
             {/* column2 */}
                 <div className="col">

@@ -1,7 +1,8 @@
 import React from 'react';
 import Quiz from '../utils/api';
-import { withRouter } from 'react-router-dom';
-import video from '../video/movie/watermelon-short-vid.mp4';
+import { withRouter, Link } from 'react-router-dom';
+import Navbar from './Navbar/Navbar';
+import '../App.css';
 import Footer from './Footer/Footer';
 
 class Home extends React.Component {
@@ -31,37 +32,17 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="home-wrapper">
-        <video src={video} id="video-home" autoPlay loop muted
-            style= {{
-            position:"absolute",
-            width:"100%",
-            left: "50%",
-            top: "50%",
-            height: "100%",
-            objectFit: "cover",
-            transform: "translate(-50%, -50%)",
-            zIndex: "-1"
-          }}
-        >
-        </video>
+      <div className="quizCreation">
+      <Navbar />
         <div className="home-form-wrapper">
         <h1 className="primary-home-title-create">Create a Game</h1>
-          <div className="p-home-text"> Log in using your Spotify account.
+          <div className="p-home-text"> 
           <br/>Write a kahoot-style quiz game.
           <br/>Invite your friends.
           <br/>Their answers will create a playlist.
           <div> <br/> </div>
-            {/* <a href="/login-spotify" id="host">
-              here
-            </a> */}
             <div className="form-field">
-            <button className="treat-button-home-create"
-            onClick={(e) => {
-            e.preventDefault();
-            window.location.href="/login-spotify";
-            }}
-            > Create!</button>
+              <Link to="/quiz-creation" className="treat-button-home-create">Create!</Link>
             </div>
           </div>
         </div>
@@ -97,7 +78,8 @@ class Home extends React.Component {
             </div>
             <br />
             <div className="form-field">
-              <button className="treat-button-home-create">Join!</button>
+              <button className="treat-button-home-create">Join!
+              </button>
             </div>
           </form>
 
