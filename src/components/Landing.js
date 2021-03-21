@@ -24,7 +24,10 @@ const Login = () => {
     </video>
     <div className="login-div">
         <h1>watermelon</h1>
-        <h4>A blend of kahoot and Spotify!</h4>
+        <h3>A blend of kahoot and Spotify!</h3>
+
+        <h3>A Spotify Premium account is required. 
+          <br/>Don't blame me, them's the Spotify rules for third-party apps.</h3>
         <div className="login-button">
             <button className="landing-page-login"
             onClick={(e) => {
@@ -32,6 +35,10 @@ const Login = () => {
             window.location.href="/login-spotify";
             }}> Log in to Spotify</button>
         </div>
+        <h4>OAuth doesn’t share password data but instead uses authorization tokens 
+          <br/>to prove an identity between consumers and service providers. 
+          <br/>OAuth is an authentication protocol that allows you to approve one 
+          <br/>application interacting with another on your behalf without giving away your password.</h4>
     </div>
     </div>
   )};

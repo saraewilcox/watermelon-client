@@ -41,8 +41,5 @@ class Quiz {
     return this.service.post(`/quiz/${code}/playlist`, { userToken });
   }
 
-  getPlaylists(userplaylists, userToken) {
-    return this.service.post(`/user-playlists`, { userplaylists, userToken });
-  }
 }
 export default Quiz;

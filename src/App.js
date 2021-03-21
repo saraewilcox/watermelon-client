@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {/*  Redirect, */ Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import AuthService from './utils/auth';
 import Landing from './components/Landing';
 import Home from './components/Home';
@@ -9,7 +9,6 @@ import QuizCode from './components/QuizCode';
 import LobbyGame from './components/LobbyGame'
 import Game from './components/Game';
 import PlaylistDisplay from './components/Playlist';
-import Playlists from './components/GetUserPlaylists';
 
 class App extends React.Component {
   state = {
@@ -69,10 +68,6 @@ class App extends React.Component {
           <Route path="/quiz-code/:quizCode/playlist" 
             render ={() => {
               return <PlaylistDisplay loggedInUser={this.state.loggedInUser} />}}  />
-          <Route path="/user-playlists" 
-            render={(props) => {
-              return <Playlists {...props}  loggedInUser={localStorage.getItem('loggedInUser')} />
-            } }/>
           <Route
             path="/login-spotify"
             render={() => {

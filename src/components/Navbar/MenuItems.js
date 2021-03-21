@@ -2,7 +2,7 @@ export const MenuItems = [
 
     // {
     //     title: 'Your Playlists',
-    //     url: '/user-playlists',
+    //     url: '/:userID/user-playlists',
     //     cName: 'nav-links'
     // },
     {

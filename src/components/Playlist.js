@@ -30,7 +30,6 @@ class Playlist extends React.Component {
   render() {
     const ConfettiWidth=1250
     const ConfettiHeight=650
-
     const size = {
       width: "75%",
       height: 400,
