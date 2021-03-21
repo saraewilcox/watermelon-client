@@ -37,9 +37,11 @@ class Home extends React.Component {
         <div className="home-form-wrapper">
         <h1 className="primary-home-title-create">Create a Game</h1>
           <div className="p-home-text"> 
-          <br/>Write a kahoot-style quiz game.
+          <br/>Write a kahoot-style quiz 
+          <br/>where songs are the answers.
           <br/>Invite your friends.
-          <br/>Their answers will create a playlist.
+          <br/>You can join the quiz too.
+          <br/>All the answers will create a playlist!
           <div> <br/> </div>
             <div className="form-field">
               <Link to="/quiz-creation" className="treat-button-home-create">Create!</Link>

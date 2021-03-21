@@ -24,7 +24,7 @@ const Login = () => {
     </video>
     <div className="login-div">
         <h1>watermelon</h1>
-        <h3>A blend of kahoot and Spotify!</h3>
+        <h3>Make playlists with your friends<br/>in this blend of kahoot and Spotify! </h3>
 
         <h3>A Spotify Premium account is required. 
           <br/>Don't blame me, them's the Spotify rules for third-party apps.</h3>
