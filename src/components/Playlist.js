@@ -44,7 +44,7 @@ const {playlist} = this.state;
         <div>
           <Navbar />
         </div>
-        <h2 className="primary-subtitle">Here's the Playlist</h2>
+        <h2 className="primary-subtitle">Here's the Playlist!</h2>
         {playlist !== null && (
           <div>
             <SpotifyPlayer

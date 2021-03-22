@@ -5,7 +5,7 @@ import { MenuItems } from './MenuItems';
 import './Navbar.css';
 
 class Navbar extends Component {
-    state= { clicked: false }
+    state= { clicked: false, loggedInUser: '' }
 
     handleClick = () => {
         this.setState({ clicked: !this.state.clicked })
@@ -18,6 +18,9 @@ class Navbar extends Component {
       }
 
     render () {
+        // let loggedInUserName = this.state.loggedInUser.displayName;
+        let loggedInUserName = localStorage.loggedInUser
+        console.log(loggedInUserName)
         return (
             <nav className="NavbarItems">
                 <h1 className="navbar-logo"> <a href={'/home'} style={{textDecoration:"none", color:"white"}}>Watermelon</a> <i className="fab fa-spotify"></i></h1>
@@ -25,6 +28,7 @@ class Navbar extends Component {
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                     
                 </div>
+                <p style={{"width": "350px",color: "purple"}}>Welcome {loggedInUserName}</p>
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
                         return (

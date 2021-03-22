@@ -37,9 +37,10 @@
 .navbar-logo {
     color: #fff;
     justify-self: start;
-    margin-left: 20px;
+    margin-left: 10px;
     cursor: pointer;
     overflow: auto;
+    width: 250px;
 }
 
 .fa-react {

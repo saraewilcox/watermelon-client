@@ -8,6 +8,8 @@
     outline: none;
     border: none;
     cursor: pointer;
+    width: 125px;
+    margin-right: 10px;
 }
 
 .btn:hover {

@@ -43,7 +43,7 @@ class App extends React.Component {
       <div className="App">
         <Switch>
         <Route exact path="/" render = {() => {
-              return <Landing loggedInUser={this.state.loggedInUser} />
+              return <Landing />
               }}
             />
           <Route exact path="/home" render = {() => {
